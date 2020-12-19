@@ -60,6 +60,18 @@ body{
 #form button:hover,.form button:active{
     background: #43A047;
 }
+#form .message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+#form .message a{
+    color: #4CAF50;
+    text-decoration: none;
+}
+#form #register-form{
+    display: none;
+}
 #footer{
     background-color: #FAB72A;
     color: black;

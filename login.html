@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Register Page</title>
+        <title>Login Page</title>
         <link rel="stylesheet" href="login.css"/>
         <link rel="stylesheet" href="login.php"/>
         <link rel="icon" href="icon/favicon.png" type="image/png" >
@@ -11,27 +11,20 @@
         <div id="wrapper">
             <header>
                 <div id="header">
-                    <h2>Insert Data</h2>
+                    <h2>Login Page</h2>
                     <p>Bangladesh</p>
                 </div>
             </header>
         </div>
         <div id="login">
             <div id="form">
-                <h2>Insert Data :</h2>
                 <form id="register-form">
-        
-                    <br>Name:<br>
-                    <input type="text" name="firstname"><br>
-                    Id :<br>
-                    <input type="number" name="lastname"><br>
-                    Age:<br>
-                    <input type="number"><br>
-                    User Name :<br>
-                    <input type="text"><br>
-                    Password :<br>
-                    <input type="text" name="department"><br>
-                    <Button>Save</Button>
+                    
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <input type="text" placeholder="email id" />
+                    <Button>Create</Button>
+                    <p class="message">Already Registered?<a href="#"> Login</a></p>
                     
                     <!--<button class="mybtn" onclick="afzal()">Create</button>
                     <script>
@@ -39,6 +32,13 @@
                             alert("You Have Clicked Me!");
                         }
                     </script>-->
+                </form>
+                <form id="login-form" method="POST" action="login.php">
+                    <input type="text" name="username" placeholder="user name"/>
+                    <input type="password" name="password" placeholder="password"/>
+                    <Button>Login</Button>
+                    <p class="message">Not Registered ? <a href="#">Register</a></p>
+                </form>
             </div>
         </div>
         
